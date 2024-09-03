@@ -4,7 +4,7 @@ class PrimeNumber {
         Scanner num = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int n = num.nextInt();
-        int count = 0
+        int count = 0;
         for (int i = 1; i <= n; i++) {
             if (n % i == 0) {
                 count++;
