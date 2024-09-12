@@ -5,7 +5,7 @@ class DigitConversion{
         System.out.print("Binary number: ");
         int binary = scanner.nextInt(); 
         int decimalValue = BinarytoDecimal(binary);
-        System.out.println("Binary value: " + binary + " = Decimal: " + decimalValue);
+        System.out.println("Binary value: " + binary );
         System.out.println("Decimal value: " + decimalValue);
         scanner.close();
     }
