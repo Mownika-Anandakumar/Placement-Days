@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class KilltheCouple {
+    public void printSingleElement(int[] A, int n) {
+        int ans = 0;
+        for (int i = 0; i < n; i++) {
+            ans ^= A[i]; // XOR all the elements
+        }
+        System.out.println(ans); // the remaining is single element
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] A = new int[n];
+        for (int i = 0; i < n; i++) {
+            A[i] = sc.nextInt();
+        }
+        Solution obj = new Solution();
+        obj.printSingleElement(A, n);
+        sc.close();
+    }
+}
